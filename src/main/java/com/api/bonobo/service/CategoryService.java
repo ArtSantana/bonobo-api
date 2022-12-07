@@ -12,7 +12,9 @@ import com.api.bonobo.model.Category;
 import com.api.bonobo.repository.CategoryRepository;
 
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @Service
 @AllArgsConstructor
 public class CategoryService {
@@ -39,6 +41,7 @@ public class CategoryService {
         }
         try {
             categoryRepository.save(category);
+            log.info("Created category {}", category.getName());
         } catch (Exception e) {
             throw new IllegalStateException("Could not create category");
         }

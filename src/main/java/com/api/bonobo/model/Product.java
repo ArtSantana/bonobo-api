@@ -1,7 +1,6 @@
 package com.api.bonobo.model;
 
 import java.util.List;
-import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -45,4 +44,10 @@ public class Product {
         this.category = category;
         this.images = images;
     }
-}
+
+    public Product(String name, String description, Double price, Category category) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.category = category;
+    }}

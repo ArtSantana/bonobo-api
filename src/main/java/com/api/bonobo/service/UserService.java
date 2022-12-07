@@ -16,7 +16,6 @@ import com.api.bonobo.model.Role;
 import com.api.bonobo.model.User;
 import com.api.bonobo.repository.RoleRepository;
 import com.api.bonobo.repository.UserRepository;
-import com.api.bonobo.security.PasswordEncoder;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
