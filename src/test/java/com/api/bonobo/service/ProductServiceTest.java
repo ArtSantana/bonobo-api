@@ -71,7 +71,6 @@ class ProductServiceTest {
        return Product.builder()
                .id(1L)
                .name("Product")
-               .categoryId(1L)
                .description("Description")
                .price(1.99)
                .build();

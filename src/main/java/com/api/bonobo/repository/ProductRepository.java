@@ -10,5 +10,5 @@ import com.api.bonobo.model.Product;
 
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
-    Optional<List<Product>> findByCategoryId(Long categoryId);
+    List<Product> findByCategoryId(Long categoryId);
 }

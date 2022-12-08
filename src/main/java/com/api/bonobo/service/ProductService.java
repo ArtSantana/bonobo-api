@@ -111,4 +111,8 @@ public class ProductService {
 
      return !product.getHasStock();
    }
+
+    public List<Product> findByCategory(Long categoryId) {
+      return productRepository.findByCategoryId(categoryId);
+    }
 }
